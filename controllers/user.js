@@ -49,6 +49,7 @@ const isUsernameExist = async (username) => {
         const result = await user.find({ username: username })
         return result.length >= 1 ? true : false
     } catch (error) {
+        console.log(err.message)
         return false
     }
 }
@@ -58,6 +59,7 @@ const isEmailExist = async (email) => {
         const result = await user.find({ email: email })
         return result.length >= 1 ? true : false
     } catch (error) {
+        console.log(err.message)
         return false
     }
 }
