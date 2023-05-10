@@ -9,11 +9,4 @@ module.exports = async (req, res, next) => {
         req.user = user
         next();
     })
-
-    // const result = await users.find({ username: req.user.user.username });
-    // if (result.length == 1) {
-    //     next();
-    // } else {
-    //     return res.status(400).json('User does not exist');
-    // }
 }
