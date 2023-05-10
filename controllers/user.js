@@ -2,7 +2,6 @@ const user = require("../schemas/users")
 const jwt = require('jsonwebtoken')
 
 const signup = async (req, res) => {
-
     const data = {
         email: req.body.email,
         username: req.body.username,

@@ -46,8 +46,7 @@ const userSchema = new mongoose.Schema({
             hour12: true,
         })
     }
-
 })
-userSchema.plugin(uniqueValidator)
 
+userSchema.plugin(uniqueValidator)
 module.exports = mongoose.model("users", userSchema)
